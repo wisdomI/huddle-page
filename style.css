@@ -217,16 +217,20 @@ footer {
     display: flex;
 }
 
-.fa-brands {
+.fa {
     height: 30px;
     width: 30px;
-    border: 0.5px solid white;
+    border: 1px solid white;
     border-radius: 50%;
 }
 
 .fa-twitter {
     margin: 0 10px;
     color: white;
+}
+
+button:hover {
+    zoom: 120%;
 }
 
 @media (max-width: 375px) {
@@ -239,7 +243,7 @@ footer {
     .sec-1 {
         background-image: url(./Images/bg-hero-mobile.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-color: hsl(193, 100%, 96%);
         width: 100%;
     }
@@ -259,7 +263,7 @@ footer {
 
     .sub-sec-img img{
         height: 40vh;
-        width: 70vw;
+        width: 90vw;
     }
 
     .sub-sec-img {
@@ -278,14 +282,19 @@ footer {
         width: 100px;
         height: 30px;
         margin-right: 10px;
+        font-weight: bold;
     }
 
     .bbtn {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         display: flex;
         justify-content: center;
-        
 
+    }
+
+    .btn-2{
+        width: 250px;
+        height: 40px;
     }
 
     .sub-sec-container {
@@ -293,20 +302,21 @@ footer {
     }
 
     .header-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
     }
 
     .header-body {
-        font-size: 0.7rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
         text-align: center;
-        line-height: 1.2rem;
+        font-weight: 300;
+        padding: 5px 40px 5px 40px;
         color: hsl(192, 100%, 9%);
-        font-weight: 700;
     }
 
     .sec-2{
-        margin: 50px;
+        margin: 20px;
         font-family: 'Open Sans', sans-serif;
     }
     
@@ -315,39 +325,51 @@ footer {
         flex-direction: column-reverse;
         margin-top: 50px ;
         justify-content: center;
-        justify-content: space-between;
-        padding: 15px 0;
+        padding: 15px 0px;
         box-shadow: 0 0 10px rgb(193, 189, 189);
         border-radius: 10px;
-        
+        width: 90vw;
     }
-    
+
+    .card-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
     .cd-img {
         height: 200px;
         width: 250px;
-        padding: 5px 5px;
     }
     
     .card-txt {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         color: hsl(208, 11%, 55%);
         text-align: center;
         margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .card-1-img,
+    .card-2-img,
+    .card-3-img {    
+        display: flex;
+        justify-content: center;
     }
 
     .card-2-text,
     .card-1-text,
     .card-3-text {
-        margin: 5px;
-        text-align: center;
-        margin: 0 5px 0 5px;
+        margin: 0px 0;
+        padding: 0 0;   
     }
 
    .card-header{
        margin-top: 20px;
-   }
+       text-align: center;
+    }
 
     /* SECTION 3 STYLING */
+
     .sec-3{
         display: flex;
         justify-content: center;
@@ -368,6 +390,8 @@ footer {
     .action-card-content {
         height: 150px;
         width: 300px;
+        width: 90vw;
+        margin-top: 100px;
     }
         
     .action-txt {
@@ -383,8 +407,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 130px 20px 100px 20px;
-        font-size: 0.7rem;
+        padding: 130px 20px 20px 20px;
+        font-size: 1rem;
     }
 
     footer {
@@ -392,16 +416,21 @@ footer {
         color: white;
     }
 
+
     .footer-logo{
-        margin-bottom: 20px;
-        margin-left: 25px;
+        margin-bottom: 10px;
+        margin-left: 10px;
     }
 
     .row-1-col-1,
     .row-2-col-1,
     .row-3-col-1{
         display: flex;
-        padding: 20px;
+        padding: 10px 0;
+    }
+    .footer-container-1{
+        padding: 0;
+        margin-bottom: 50px;
     }
 
     .ft-img-2,
@@ -419,6 +448,8 @@ footer {
     .row-2-col-1-txt,
     .row-3-col-1-txt {
         margin: 0 20px;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
     }
 
     .ft-email {
@@ -429,34 +460,40 @@ footer {
     .footer-container-3,
     .footer-icons {
         margin: 0;
+        font-size: 1rem;
     }
 
     .ft-txt-2,
-    .ft-txt-5 {
-        margin: 20px 0;
+    .ft-txt-3,
+    .ft-txt-5,
+    .ft-txt-6 {
+        margin: 30px 0;
     }
 
     .copyright {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 50px 100px 0;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        justify-content: center;
+        margin-left: 30px;
+        font-weight: lighter;
+        margin-top: 0;
     }
 
     .footer-icons {
         display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
-    .fa-brands {
+    .fa {
         height: 30px;
         width: 30px;
-        border: 0.5px solid white;
+        border: 1px solid white;
         border-radius: 50%;
+        margin-top: 30px;
     }
 
-    .fa-twitter {
-        margin: 0 10px;
-        color: white;
+    button:hover {
+        zoom: 120%;
     }
 }
