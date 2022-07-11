@@ -236,7 +236,7 @@ button:hover {
     transition: .90s;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
 
     body {
         width: 100%;
